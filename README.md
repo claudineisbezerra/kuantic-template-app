@@ -79,7 +79,7 @@ $ cd kuantic-template-app
 
 
 
-3. Add .env file to server folder and fill out details according to the .example.env. See [configuration details](#configuration-setup) for social auth and database setup
+3. Add .env file to server folder and fill out details according to the .env.example. See [configuration details](#configuration-setup) for social auth and database setup
 
 4. Start the application
 
@@ -109,7 +109,7 @@ $ heroku create
 
     i. Go to Settings -> Reveal Config Vars
 
-    ii. Add the config variables according to the .example.env
+    ii. Add the config variables according to the .env.example
 
     iii. These Include
 
