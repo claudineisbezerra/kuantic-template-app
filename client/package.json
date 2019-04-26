@@ -1,0 +1,43 @@
+{
+  "name": "kuantic-template-app-client",
+  "version": "1.0.0",
+  "description": "Kuantic Template Application Client",
+  "private": true,
+  "author": "Claudineis Bezerra <claudineis@kuantic.com.br>",
+  "scripts": {
+    "build": "vue-cli-service build",
+    "test": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve --open"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "particles.js": "^2.0.0",
+    "slugify": "^1.3.4",
+    "socket.io-client": "^2.2.0",
+    "typed.js": "^2.0.10",
+    "vue": "^2.6.10",
+    "vue-flag-icon": "^1.0.6",
+    "vue-i18n": "^8.11.1",
+    "vue-router": "^3.0.6",
+    "vue-typed-js": "^0.1.2",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-eslint": "^3.6.0",
+    "@vue/cli-plugin-unit-jest": "^3.6.3",
+    "@vue/cli-service": "^3.6.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^24.7.1",
+    "kleur": "^3.0.3",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "license": "MIT"
+}
