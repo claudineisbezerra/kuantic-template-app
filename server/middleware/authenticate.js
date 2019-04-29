@@ -44,8 +44,8 @@ const checkRegistrationFields = async (req, res, next) => {
 const checkLoginFields = async (req, res, next) => {
     let errors = [];
     console.log('checkLoginFields req.body.email:', req.body.email);
-    console.log('checkLoginFields req:', req);
-    console.log('checkLoginFields res:', res);
+    // console.log('checkLoginFields req:', req);
+    // console.log('checkLoginFields res:', res);
     const user = await User.findOne({ email: req.body.email });
     console.log('checkLoginFields user:', user);
     if (!user) {
