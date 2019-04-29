@@ -260,7 +260,7 @@ export default {
             this.errors = [];
           }, 1500);
         })
-        .catch((err) => console.log(err));
+        .catch((err) => err);
     },
     viewRoomDetails() {
       this.$refs.roomDetails.open();
@@ -318,13 +318,9 @@ export default {
           });
         });
 
-        this.getSocket.on('reconnected', () => {
-          console.warn('Reconnected');
-        });
+        this.getSocket.on('reconnected', () => {});
 
-        this.getSocket.on('disconnect', () => {
-          console.warn('Disconnected');
-        });
+        this.getSocket.on('disconnect', () => {});
 
         /** Socket IO: User Exit Event - Update User List */
         this.getSocket.on('updateUserList', (data) => {

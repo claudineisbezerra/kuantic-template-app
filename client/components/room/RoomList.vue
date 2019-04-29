@@ -253,7 +253,7 @@ export default {
             this.getSocket.emit('roomAdded', res.data);
           }
         })
-        .catch((err) => {});
+        .catch((err) => err);
 
       setTimeout(() => {
         this.errors = [];
@@ -272,7 +272,7 @@ export default {
             content: `${res.data.user.username} deleted room ${res.data.name}`
           });
         })
-        .catch((err) => console.log(err));
+        .catch((err) => err);
     },
     handleRoomClick(room) {
       if (room.access || this.getUserData._id === room.user._id || room.accessIds.includes(this.getUserData._id)) {
@@ -315,7 +315,7 @@ export default {
             this.errors = [];
           }, 1500);
         })
-        .catch((err) => console.log(err));
+        .catch((err) => err);
     }
   },
   created() {

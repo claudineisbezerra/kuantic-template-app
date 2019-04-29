@@ -94,8 +94,6 @@ export default {
   },
   mounted() {
     this.scrollMessages();
-    console.log('user', this.user);
-    console.log('messages', this.messages);
   },
   updated() {
     this.scrollMessages();

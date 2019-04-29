@@ -121,7 +121,7 @@ export default {
               });
             }
           })
-          .catch((err) => console.log(err));
+          .catch((err) => err);
 
         setTimeout(() => {
           this.errors = [];
