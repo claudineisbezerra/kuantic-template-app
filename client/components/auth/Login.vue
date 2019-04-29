@@ -85,6 +85,8 @@ export default {
     handleSubmit() {
       this.errors = [];
       if (this.email && this.password) {
+        console.log('Login handleSubmit this.email:', this.email);
+        console.log('Login handleSubmit this.password:', this.password);
         axios
           .post(
             '/api/auth/login',
@@ -93,6 +95,8 @@ export default {
           )
           .then((res) => {
             if (res.data.errors) {
+              console.log('Login handleSubmit res.data:', res.data);
+              console.log('Login handleSubmit res.data.errors:', res.data.errors);
               for (const error of res.data.errors) {
                 const [key] = Object.keys(error);
                 const [value] = Object.values(error);

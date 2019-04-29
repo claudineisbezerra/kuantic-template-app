@@ -72,9 +72,12 @@ router.post('/register', [checkRegistrationFields], (req, res) => {
  * @access public
  */
 router.post('/login', checkLoginFields, async (req, res) => {
+    console.log('auth /login req.body.email:', req.body.email);
     const user = await User.findOne({ email: req.body.email }).select('-password');
 
     if (!user) {
+        console.log('auth /login res:', res);
+        console.log('auth /login res.status:', res.status);
         return res.status(404).send({
             error: res.$t('userName_error_NOTFOUND')
         });

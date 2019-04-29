@@ -43,8 +43,11 @@ const checkRegistrationFields = async (req, res, next) => {
 
 const checkLoginFields = async (req, res, next) => {
     let errors = [];
+    console.log('authenticate checkLoginFields req.body.email:', req.body.email);
     const user = await User.findOne({ email: req.body.email });
+    console.log('authenticate checkLoginFields user:', user);
     if (!user) {
+        console.log('authenticate checkLoginFields msg:', res.$t('email_error_NOTFOUND'));
         errors.push({ param: 'email', msg: res.$t('email_error_NOTFOUND') });
     } else {
         if (req.body.password !== null && !(await user.isValidPassword(req.body.password))) {

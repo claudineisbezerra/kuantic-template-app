@@ -9,6 +9,7 @@ const connect = () => {
         { useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false },
         err => {
             if (err) {
+                console.log('mongoose.connect err:', err);
                 logger.error(err);
                 return;
             }
