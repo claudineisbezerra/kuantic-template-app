@@ -66,17 +66,12 @@ module.exports = class LocaleService {
         return (req, res, next) => {
             const queryParameter = 'lang';
             const currentLanguage = this.getCurrentLocale().toLowerCase();
-            console.log('SERVER changeLocale currentLanguage:', currentLanguage);
 
             if (req.url) {
                 const urlObj = url.parse(req.url, true);
                 if (urlObj.query[queryParameter]) {
                     const language = urlObj.query[queryParameter].toLowerCase();
                     this.setLocale(language);
-                    console.log(
-                        'QUERYSTRING NEW language: ',
-                        this.getCurrentLocale().toLowerCase()
-                    );
                 }
             }
             next();

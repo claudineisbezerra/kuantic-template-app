@@ -59,6 +59,7 @@ export default {
       }
     );
   },
+  mounted() {},
   methods: {
     // Work around to trigger Vue event and refresh browser objects
     switchLocale() {
