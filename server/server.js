@@ -1,4 +1,6 @@
 /** dotenv Environment Variables */
+console.log('server process.env.NODE_ENV:', process.env.NODE_ENV);
+console.log('server process.env.PORT:', process.env.PORT);
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
@@ -259,11 +261,12 @@ if (process.env.NODE_ENV === 'production') {
 
 /** Serve start if test */
 if (process.env.NODE_ENV !== 'test') {
-    console.log('process.env.PORT:', process.env.PORT);
-    console.log('process.env.NODE_ENV:', process.env.NODE_ENV);
+    console.log('server process.env.PORT:', process.env.PORT);
+    console.log('server process.env.NODE_ENV:', process.env.NODE_ENV);
     server.listen(process.env.PORT || 5000, () => {
         logger.info(`[LOG=SERVER] Server started on port ${process.env.PORT}`);
     });
 }
 
+console.log('server app:', app);
 module.exports = { app };

@@ -43,19 +43,26 @@ const checkRegistrationFields = async (req, res, next) => {
 
 const checkLoginFields = async (req, res, next) => {
     let errors = [];
-    console.log('authenticate checkLoginFields req.body.email:', req.body.email);
+    console.log('checkLoginFields req.body.email:', req.body.email);
+    console.log('checkLoginFields req:', req);
+    console.log('checkLoginFields res:', res);
     const user = await User.findOne({ email: req.body.email });
-    console.log('authenticate checkLoginFields user:', user);
+    console.log('checkLoginFields user:', user);
     if (!user) {
-        console.log('authenticate checkLoginFields msg:', res.$t('email_error_NOTFOUND'));
+        console.log('checkLoginFields !USER msg:', 'ANTES DE I18N CALL');
+        console.log('checkLoginFields !USER msg:', res.$t('email_error_NOTFOUND'));
         errors.push({ param: 'email', msg: res.$t('email_error_NOTFOUND') });
+        console.log('checkLoginFields !USER msg:', 'APÓS DE I18N CALL');
     } else {
         if (req.body.password !== null && !(await user.isValidPassword(req.body.password))) {
             errors.push({ param: 'password', msg: res.$t('password_error_INCORRECT') });
         }
+        console.log('checkLoginFields !PWD msg:', 'ANTES DE I18N CALL');
+        console.log('checkLoginFields !PWD msg:', res.$t('password_error_INCORRECT'));
     }
 
     if (errors.length !== 0) {
+        console.log('checkLoginFields errors:', errors);
         res.send({
             errors: createErrorObject(errors)
         });

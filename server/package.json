@@ -1,6 +1,10 @@
 {
     "name": "kuantic-template-app-server",
     "version": "1.0.0",
+    "engines": {
+        "node": "10.x",
+        "npm": "6.x"
+    },
     "description": "Kuantic Template Application Server",
     "main": "index.js",
     "private": true,
