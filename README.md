@@ -2,13 +2,23 @@
 
 [![Build Status](https://travis-ci.org/claudineisbezerra/kuantic-template-app.svg?branch=master)](https://travis-ci.org/claudineisbezerra/kuantic-template-app)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
+## Root Dependencies
 [![devDependencies Status](https://david-dm.org/claudineisbezerra/kuantic-template-app/dev-status.svg)](https://david-dm.org/claudineisbezerra/kuantic-template-app?type=dev)
 [![dependencies Status](https://david-dm.org/claudineisbezerra/kuantic-template-app/status.svg)](https://david-dm.org/claudineisbezerra/kuantic-template-app)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+## Root/Client Dependencies
+[![devDependencies Status](https://david-dm.org/claudineisbezerra/kuantic-template-app/dev-status.svg?path=client)](https://david-dm.org/claudineisbezerra/kuantic-template-app?path=client)
+[![dependencies Status](https://david-dm.org/claudineisbezerra/kuantic-template-app/status.svg?path=client)](https://david-dm.org/claudineisbezerra/kuantic-template-app?path=client)
+
+## Root/Server Dependencies
+[![devDependencies Status](https://david-dm.org/claudineisbezerra/kuantic-template-app/dev-status.svg?path=server)](https://david-dm.org/claudineisbezerra/kuantic-template-app?path=server)
+[![dependencies Status](https://david-dm.org/claudineisbezerra/kuantic-template-app/status.svg?path=server)](https://david-dm.org/claudineisbezerra/kuantic-template-app?path=server)
 
 Template for Real Time Chat Application created with MEVN stack. Including MongoDB/Mongoose/Mongo Atlas, Express, VueJS, Node and Socket IO.
 
-<!-- ![Kuantic Template Demo](/client/assets/img/kuantic_logo.png) -->
 <p align="center">
     <img width="150"
         src="/client/assets/img/kuantic_logo.png"
