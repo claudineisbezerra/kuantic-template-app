@@ -46,6 +46,14 @@ const checkLoginFields = async (req, res, next) => {
     console.log('checkLoginFields req.body.email:', req.body.email);
     // console.log('checkLoginFields req:', req);
     // console.log('checkLoginFields res:', res);
+    // const user = null;
+    // try {
+    //     console.log('checkLoginFields try ANTES DE User:', User);
+    //     user = await User.findOne({ email: req.body.email });
+    //     console.log('checkLoginFields try DEPOIS DE User:', User);
+    // } catch (error) {
+    //     console.log('checkLoginFields catch User error:', User);
+    // }
     const user = await User.findOne({ email: req.body.email });
     console.log('checkLoginFields user:', user);
     if (!user) {
@@ -67,6 +75,7 @@ const checkLoginFields = async (req, res, next) => {
             errors: createErrorObject(errors)
         });
     } else {
+        console.log('checkLoginFields errors:', errors);
         next();
     }
 };

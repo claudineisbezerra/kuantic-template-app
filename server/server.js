@@ -9,6 +9,7 @@ if (process.env.NODE_ENV !== 'production') {
 const mongoose = require('mongoose');
 require('./db/mongoose');
 
+console.log('[LOG=DB] SERVER mongoose:', mongoose);
 /** Built In Node Dependencies */
 const path = require('path');
 const fs = require('fs');
