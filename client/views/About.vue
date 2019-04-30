@@ -21,9 +21,8 @@
           </div>
           <div class="features__item">
             <span>
-              {{ $t('about_jwtMsg') }}
+              {{ $t('about_jwtMsg') }} {{ $t('about_jwtMsgTokens') }}
               <a href="https://jwt.io/" target="_blank" class="btn btn--info">{{ $t('about_jwt') }}</a>
-              {{ $t('about_jwtMsgTokens') }}
             </span>
           </div>
           <div class="features__item">
@@ -104,10 +103,16 @@
           </div>
           <div class="features__item">
             <span>
-              <a href="https://mattboldt.com/demos/typed-js/" target="_blank" class="btn btn--success">
+              <a href="https://kazupon.github.io/vue-i18n/" target="_blank" class="btn btn--success">
                 {{ $t('about_vueI18n') }}
               </a>
-              {{ $t('about_vueI18nMsg') }}
+              {{ $t('about_vueI18nMsg') }}.
+            </span>
+            <span>
+              {{ $t('about_i18nMsg') }}
+              <a href="https://github.com/mashpie/i18n-node/" target="_blank" class="btn btn--danger">
+                {{ $t('about_i18n') }}
+              </a>
             </span>
           </div>
           <div class="features__item">

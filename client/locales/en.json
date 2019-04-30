@@ -61,6 +61,8 @@
   "about_vueTypedjsMsg": "A Vue.js integration for Typed.js library",
   "about_vueFlagIcon": "Vue-Flag-Icon",
   "about_vueFlagIconMsg": "a Vue.js Compoment for flag-icon-css",
+  "about_i18n": "i18n",
+  "about_i18nMsg": "We also apply internationalization plugin on Node.js with",
   "about_vueI18n": "vue-i18n",
   "about_vueI18nMsg": "Is internationalization plugin for Vue.js",
   "about_travisCI": "Travis CI",

@@ -65,7 +65,6 @@ UserSchema.methods.isValidPassword = function(password) {
 
 // Before Saving hash the password with bcrypt, using the default 10 rounds for salt
 UserSchema.pre('save', function(next) {
-    console.log('UserSchema.pre password:', this.password);
     if (this.password !== '' && this.isModified('password')) {
         bcrypt.genSalt(10, (err, salt) => {
             bcrypt.hash(this.password, salt, (err, res) => {

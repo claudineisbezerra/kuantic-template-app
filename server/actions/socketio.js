@@ -47,7 +47,6 @@ module.exports = {
             .select('-password')
             .populate('users.lookup', ['username', 'social', 'handle', 'image']);
 
-        // console.log(data.user);
         if (room) {
             if (
                 room.users &&

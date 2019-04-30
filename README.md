@@ -32,9 +32,9 @@ View the project management cycle here [Kuantic Template Project Kanban (Trello)
 
 | Technology | Description                                                                           | Link ↘️                 |
 | ---------- | ------------------------------------------------------------------------------------- | ----------------------- |
-| HTML5      | Hyper Text Markup Language                                                            | ----                    |
-| CSS3       | Cascading Style Sheets                                                                | ----                    |
-| JavaScript | High Level, Dynamic, Interpreted Language                                             | ----                    |
+| HTML5      | Hyper Text Markup Language                                                            | https://www.w3schools.com/html/default.asp  |
+| CSS3       | Cascading Style Sheets                                                                | https://www.w3schools.com/css/default.asp   |
+| JavaScript | High Level, Dynamic, Interpreted Language                                             | https://www.w3schools.com/js/default.asp    |
 | SASS       | Syntactically Awesome Style Sheets                                                    | https://sass-lang.com/  |
 | Babel      | Javascript Compiler                                                                   | https://babeljs.io/     |
 | Webpack    | Javascript Module Bundler                                                             | https://webpack.js.org/ |
@@ -50,6 +50,7 @@ View the project management cycle here [Kuantic Template Project Kanban (Trello)
 - Implements stateless authentication with [JWT](https://jwt.io/) tokens
 - Authenticates [JWT](https://jwt.io/) and social authentication using [Passport](http://www.passportjs.org/)
 - Hashes passwords using the [bcryptjs](https://www.npmjs.com/package/bcryptjs) package
+- Internationalization on [Client](https://kazupon.github.io/vue-i18n/) and [Server](https://github.com/mashpie/i18n-node/) sides
 - Enables real time communication to the server using [Socket IO](https://socket.io/)
 - [MongoDB](https://www.mongodb.com/) and [Mongo Atlas](https://www.mongodb.com/cloud/atlas) is used for storing and querying data
 - Server logging is done with [Winston](https://www.npmjs.com/package/winston) and [Morgan](https://www.npmjs.com/package/morgan)
@@ -120,11 +121,11 @@ $ heroku create
     GOOGLE_CLIENT_ID
     GOOGLE_CLIENT_SECRET
     JWT_SECRET
-    NPM_CONFIG_PRODUCTION (Must be false)
     PORT (Optional)
+    NPM_CONFIG_PRODUCTION (Must be false)
     ```
 
-    iv. Ensure that you add NPM_CONFIG_PRODUCTION to false to allow installation of dev dependencies for post build to work correctly
+    iv. Ensure that you set NPM_CONFIG_PRODUCTION to false to allow installation of dev dependencies for post build to work correctly
 
 4. Commit any changes and push your code from local repo to your git
 ```bash
@@ -178,16 +179,12 @@ For development you will need a .env file for environmental variables. This incl
 
 ```bash
 DATABASE_URL=DATABASE_URL
-
 EXPRESS_SESSION_KEY=EXPRESS_SESSION_KEY
 JWT_SECRET=JWT_SECRET
-
 GOOGLE_CLIENT_ID=GOOGLE_CLIENT_ID
 GOOGLE_CLIENT_SECRET=GOOGLE_CLIENT_SECRET
-
 FACEBOOK_CLIENT_ID=FACEBOOK_CLIENT_ID
 FACEBOOK_CLIENT_SECRET=FACEBOOK_CLIENT_SECRET
-
 PORT=PORT
 ```
 
