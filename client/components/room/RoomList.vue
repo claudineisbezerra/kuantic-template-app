@@ -220,7 +220,9 @@ export default {
             this.rooms = res.data;
           }
         })
-        .catch((err) => { err });
+        .catch((err) => {
+          err;
+        });
     },
     openModal() {
       this.$refs.createRoom.open();

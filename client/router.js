@@ -3,6 +3,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 import About from './views/About.vue';
+import AppHome from './views/AppHome.vue';
 import Login from '@/components/auth/Login.vue';
 import Register from '@/components/auth/Register.vue';
 import Profile from '@/components/profile/Profile.vue';
@@ -32,6 +33,14 @@ const router = new Router({
       path: '/about',
       name: 'About',
       component: About,
+      meta: {
+        requiresAuth: false
+      }
+    },
+    {
+      path: '/appHome',
+      name: 'AppHome',
+      component: AppHome,
       meta: {
         requiresAuth: false
       }

@@ -23,6 +23,11 @@
             {{ $t('about') }}
           </router-link>
         </li>
+        <li class="nav__item">
+          <router-link to="/appHome" class="nav__link">
+            {{ $t('appHome') }}
+          </router-link>
+        </li>
       </ul>
       <ul v-if="!isAuthorized" class="navbar__nav navbar__nav--right">
         <li class="nav__item">
@@ -60,6 +65,11 @@
         <li class="snav__item" @click="closeSideNav">
           <router-link to="/about" class="nav__link">
             {{ $t('about') }}
+          </router-link>
+        </li>
+        <li class="snav__item" @click="closeSideNav">
+          <router-link to="/appHome" class="nav__link">
+            {{ $t('appHome') }}
           </router-link>
         </li>
         <li class="snav__item" @click="closeSideNav">
