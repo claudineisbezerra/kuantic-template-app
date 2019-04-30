@@ -8,7 +8,7 @@
 
 Template for Real Time Chat Application created with MEVN stack. Including MongoDB/Mongoose/Mongo Atlas, Express, VueJS, Node and Socket IO.
 
-![Kuantic Template Demo](/client/assets/img/kuantic_logo.png)
+![Kuantic Template Demo](/client/assets/img/kuantic_logo.png){:height="512px" width="512px"}
 
 
 ## Contents
