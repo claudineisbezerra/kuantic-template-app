@@ -4,15 +4,24 @@
       <div class="section__heading"></div>
 
       <div class="section__content">
-        <a href="https://coreui.io/vue/demo/dark/#/charts" target="_blank" class="btn btn--anim btn--white">
-          CoreUI Template
+        <a href="https://coreui.io/vue/demo/#/dashboard" target="_blank" class="btn btn--anim btn--white">
+          CoreUI for Vue.js | Bootstrap 4.x
+          <br />
+          Free Vue.js | Bootstrap 4.x Admin Template
         </a>
         <a
           href="https://panjiachen.github.io/vue-element-admin/#/dashboard"
           target="_blank"
           class="btn btn--anim btn--info"
         >
-          Vue Element Admin Template
+          UI Toolkit element-ui for Vue.js
+          <br />
+          Free Vue.js | element-ui Admin Template
+        </a>
+        <a href="https://vuestic.epicmax.co/#/admin/dashboard" target="_blank" class="btn btn--anim btn--info">
+          Vuestic Admin Dashboard for Vue.js | Bootstrap 4.x
+          <br />
+          Free Vue.js | Bootstrap 4.x Admin Template
         </a>
       </div>
     </section>
