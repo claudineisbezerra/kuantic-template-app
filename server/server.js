@@ -259,7 +259,7 @@ if (process.env.NODE_ENV === 'production') {
 
 /** Serve start if test */
 if (process.env.NODE_ENV !== 'test') {
-    server.listen(process.env.PORT || 5000, () => {
+    server.listen(process.env.PORT || 6000, () => {
         logger.info(`[LOG=SERVER] Server started on port ${process.env.PORT}`);
     });
 }
